@@ -98,4 +98,3 @@ turtle.onscreenclick(stamp, btn=1, add=True)
 
 
 turtle.mainloop()
-
