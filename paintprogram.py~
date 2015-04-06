@@ -6,9 +6,9 @@ print("when you will click on the screen, a shape will appear.")
 print("to change the shape press on --->")
 print("Up - Circle, Down - Square, Left - Triangle, Right - Turtle.")
 print("to change the color of the shape press on --->")
-print("B - Blue, R - Red, G - Green, Y - Yellow, O - Orange, S - Black, W - White (eraser).")
+print("B - Blue, R - Red, G - Green, Y - Yellow, O - Orange.")
 print("to change the size of the shape press on --->")
-print("size 1 - 1, size 2 - 2, size 3 - 3, size 4 - 4, size 5 - 5.")
+print("size 1 - 1, size 2 - 2, size 3 - 3, size 4 - 4.")
 print("to clear the screen press - C.")
 print("ENJOY!")
 
@@ -24,24 +24,17 @@ def size_2():
 turtle.getscreen().onkeypress(size_2,"2")
 turtle.getscreen().listen()
 
-def size_3():    
-    turtle.shapesize(3,3,3)
-    
-turtle.getscreen().onkeypress(size_3,"3")
-turtle.getscreen().listen()
 
 def size_4():    
     turtle.shapesize(4,4,4)
     
 turtle.getscreen().onkeypress(size_4,"4")
 turtle.getscreen().listen()
-
-def size_5():    
-    turtle.shapesize(5,5,5)
+def size_3():    
+    turtle.shapesize(3,3,3)
     
-turtle.getscreen().onkeypress(size_5,"5")
+turtle.getscreen().onkeypress(size_3,"3")
 turtle.getscreen().listen()
-
 
 def turtle_shape():    
     turtle.shape("turtle")
@@ -74,18 +67,6 @@ def blue_color():
 turtle.getscreen().onkeypress(blue_color,"b")
 turtle.getscreen().listen()
 
-def white_color():    
-    turtle.color("white")
-    
-turtle.getscreen().onkeypress(white_color,"w")
-turtle.getscreen().listen()
-
-def black_color():    
-    turtle.color("black")
-    
-turtle.getscreen().onkeypress(black_color,"s")
-turtle.getscreen().listen()
-
 def red_color():    
     turtle.color("red")
     
@@ -105,7 +86,7 @@ turtle.getscreen().onkeypress(yellow_color,"y")
 turtle.getscreen().listen()
 
 def orange_color():    
-    turtle.color("#FF800D")
+    turtle.color("FF800D")
     
 turtle.getscreen().onkeypress(orange_color,"o")
 turtle.getscreen().listen()
@@ -117,7 +98,7 @@ turtle.getscreen().onkeypress(clear,"c")
 turtle.getscreen().listen()
 
 
-turtle.color("black")
+turtle.color("blue")
 turtle.shape("circle")
 
 def stamp(x,y):
